@@ -165,16 +165,22 @@
   .btn:hover .arrow.down { transform: translateY(2px); }
 
   .hero-stats {
-    display: flex; gap: 3rem; margin-top: 4rem;
-    padding-top: 2.5rem; border-top: 1px solid var(--border);
+    display: flex; gap: 2rem; margin-top: 3.5rem;
+    padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .hero-stats > div {
+    flex: 1; padding-right: 2rem;
+    border-right: 1px solid var(--border);
+  }
+  .hero-stats > div:last-child { border-right: none; padding-right: 0; }
+  .stat-label {
+    font-size: 13px; color: var(--muted); font-family: var(--mono);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px;
+    display: block;
   }
   .stat-num {
-    font-family: var(--serif); font-size: 2.4rem; color: var(--text);
-    display: block; line-height: 1; margin-bottom: 6px;
-  }
-  .stat-label {
-    font-size: 11px; color: var(--muted); font-family: var(--mono);
-    letter-spacing: 0.06em; text-transform: uppercase;
+    font-family: var(--sans); font-size: 22px; font-weight: 600;
+    color: var(--text); display: block; line-height: 1.3;
   }
 
   /* SHARED */
@@ -430,7 +436,7 @@
     <div class="hero-content">
       <div class="hero-label reveal">CS Student &amp; Developer</div>
       <h1 class="hero-name reveal reveal-d1">Joseph<br><em>Masanque</em></h1>
-      <p class="hero-sub reveal reveal-d2">Building thoughtful software — from systems-level code to full-stack applications. Currently studying at Toronto Metropolitan University.</p>
+      <p class="hero-sub reveal reveal-d2">Building meaningful software that operatates from systems-level code to full-stack applications. Currently studying at Toronto Metropolitan University.</p>
       <div class="hero-cta reveal reveal-d3">
         <a href="#projects" class="btn btn-primary">View projects <span class="arrow">→</span></a>
         <a href="#contact" class="btn btn-outline">Get in touch</a>
@@ -438,16 +444,16 @@
       </div>
       <div class="hero-stats reveal reveal-d4">
         <div>
-          <span class="stat-num">TMU</span>
           <span class="stat-label">University</span>
+          <span class="stat-num">Toronto Metropolitan University</span>
         </div>
         <div>
-          <span class="stat-num">CS</span>
           <span class="stat-label">Major</span>
+          <span class="stat-num">Computer Science</span>
         </div>
         <div>
-          <span class="stat-num">Toronto</span>
           <span class="stat-label">Based in</span>
+          <span class="stat-num">Toronto</span>
         </div>
       </div>
     </div>
